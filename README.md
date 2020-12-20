@@ -55,8 +55,8 @@ Script ini di modifikasi sama saya sendiri FADHIL ID.
 > termux-setup-storage
 > pkg install git && pkg install tesseract && pkg install wget && pkg install ffmpeg && pkg install nodejs
 > apt update && apt upgrade
-> git clone https://github.com/FdhlGraphy/botwa
-> cd botwa
+> git clone https://github.com/FdhlGraphy/botku
+> cd botku
 > npm i -g cwebp && npm i node-tesseract-ocr && npm i -g ytdl && npm i  && npm i got && node index js
 > Tinggal scan kode qr yeee...done
 ```
