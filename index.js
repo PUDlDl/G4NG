@@ -1,11 +1,11 @@
 /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY FADHIL ID
+* SCRIPT BY MouwBot
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YG MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* FADHIL ID
+* MouwBot
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
 const qrcode = require("qrcode-terminal")
@@ -18,9 +18,9 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: '🔰_MyBot_🔰',
-    instagram: 'https://instagram.com/nur.fdhl_',
-    nomer: 'wa.me/6283102650464',
+    A187: 'MouwBotツ',
+    instagram: 'https://instagram.com/itspapoy',
+    nomer: 'wa.me/6287714745440',
     aktif: 'TERGANTUNG OWNER',
     youtube: 'https://youtube.com',
     whatsapp: 'https://chat.whatsapp.com/D8YpSLQWqvh6AYLyn5HnSB',
