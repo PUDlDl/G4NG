@@ -1,11 +1,11 @@
 /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY MouwBot
+* SCRIPT BY PUDIDIBOT
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YG MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* MouwBot
+* PUDIDI
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
 const qrcode = require("qrcode-terminal")
@@ -18,7 +18,7 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: 'MouwBotツ',
+    A187: 'PUDIDIツ',
     instagram: 'https://instagram.com/itspapoy',
     nomer: 'wa.me/6287714745440',
     aktif: 'TERGANTUNG OWNER',
@@ -109,7 +109,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code by FADHIL & MYBOT, Scan kode qr mu cok!`)
+   console.log(`[ ${time} ] QR code by PUDIDI, Scan kode qr mu cok!`)
 })
 
 client.on('credentials-updated', () => {
@@ -123,11 +123,11 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@aditiaalfians`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@itspapoy`)
 
 client.on('message-status-update', json => {
    const participant = json.participant ? ' (' + json.participant + ')' : ''
-   console.log(`[ ${time} ] => bot by ig:@mybot01_`)
+   console.log(`[ ${time} ] => bot by ig:@itspapoy`)
 })
 
 client.on('message-new', async (m) => {
