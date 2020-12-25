@@ -11,6 +11,12 @@
 const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
 const fs = require("fs")
+const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
+            + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
+            + 'FN:Fadhli\n' // MENDING LU TOBAT SU!
+            + 'ORG:@itspapoy;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' // JANGAN KEK BABI SU
+            + 'END:VCARD' // ARIS187 ID
 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
