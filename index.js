@@ -129,7 +129,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@itspapoy`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by AnxietyBot`)
 
 client.on('message-status-update', json => {
    const participant = json.participant ? ' (' + json.participant + ')' : ''
@@ -156,6 +156,12 @@ client.on('message-new', async (m) => {
        case 'help':
            client.sendMessage(id, help.help(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
+       case 'admin':
+            case 'owner':
+            case 'creator':
+                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
+       client.sendMessage(from, 'Nah udh aku kasih no nya,Jangan lupa di sv yaa ><',MessageType.text, { quoted: mek} )
+       break
        case 'menu1':
            client.sendMessage(id, menu1.menu1(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
@@ -592,7 +598,7 @@ case 'gay':
            indohot()
                .then(data => {
                    const { judul, genre, durasi, url } = data
-                   let hasil = `Tobat GOBLOK🔞* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  `
+                   let hasil = `Tobat blog🔞* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  `
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
